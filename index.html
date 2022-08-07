@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon_1.jpeg"/>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Trello Aleja</title>
+</head>
+
+<body>
+<div id="contenedor" class="contenedor">
+  <div id="divTop" class="divtop">
+    <div class="div-img">
+      <img src="./img/favicon_1.jpeg" class="img" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="listas" class="listas">
+ 
+</div> 
+
+    <form id="formTarea" name="formTarea" class="form" action="">
+      <input type="text" id="nombreTarea" name="nombreTarea" class="input" placeholder="Nombre de Tarea">
+      <input type="text" id="descripcion" name="descripcion" class="input" placeholder="Descripcion Tarea">
+      <input type="text" id="userTarea" name="userTarea" class="input" placeholder="Responsable Tarea">
+      <input type="number" id="diaEntrega" name="diaEntrega" class="input" placeholder="Fecha de entrega en dias">
+      <input type="button" id="btnCrearTarea" class="btn-agregar" value=" Crear">
+      <input type="button" id="btnCerrarFCT" class="btn-agregar" value="Cerrar">
+    </form>
+
+    <form id="formTituloColumna" name="formTituloColumna" class="form" action="">
+      <input type="text" id="nombreCol" name="nombreCol" class="input" placeholder="Nombre Lista">
+      <input type="button" id="btnCrearColumna" class="btn-agregar" value=" Crear">
+      <input type="button" id="btnCerrarFCC" class="btn-agregar" value="Cerrar">
+    </form>
+
+    <p id="info" class="info"></p>
+
+    <div id="con-menu" class="container">
+      <input type="checkbox" id="btn-mas">
+      <div class="btn-mas">
+          <label for="btn-mas" class="fa"><b>☰</b></label>
+      </div>
+      <div class="ver-btn">
+          <p class="con-btn-menu"><button type="button" id="agregarTarea" class="btn-menu" onclick="">Agregar Tarea</button></p>
+          <p class="con-btn-menu"><button type="button" id="agregarColumna" class="btn-menu" onclick="">Agregar Lista</button></p>
+          <p class="con-btn-menu"><button type="button" id="btnBd" class="btn-menu" onclick=""><a target="_blank" class="fcc-btn" href="https://docs.google.com/spreadsheets/d/1U4b4aVMhq5BEcD1uTxsHWuMqQpsDJyZjqmQ06Czt0rw/edit?usp=sharing">Base de datos</a></button></p>
+          
+        </div>
+    </div>
+</body>
+
+<!-- Llamado de Librerias a nivel externas-->
+<script src="./librerias/axios.js"></script>
+<script src="./librerias/sortable.js"></script>
+<script src="./librerias/moment.js"></script>
+
+<!--Llamado de js a nivel interno-->
+<script src="./js/peticionaxios.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/validacion.js"></script>
+<script src="./js/crear.js"></script>
+
+</html>
